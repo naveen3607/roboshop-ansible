@@ -5,6 +5,6 @@
     component: user
     schema: true
   tasks:
-    - name: NodeJS Setup
+    - name: Install NodeJS Setup
       ansible.builtin.import_tasks:
         file: nodejs.yml
