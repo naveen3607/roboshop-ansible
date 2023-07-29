@@ -13,6 +13,12 @@
         name: rabbitmq-server
         state: installed
 
+    - name: Start RabbitMQ Service
+      ansible.builtin.systemd:
+        name: rabbitmq
+        state: restarted
+        enabled: yes
+
     - name: Add Application User
       community.rabbitmq.rabbitmq_user:
         user: roboshop
@@ -23,8 +29,3 @@
         write_priv: .*
         state: present
 
-    - name: Start RabbitMQ Service
-      ansible.builtin.systemd:
-        name: rabbitmq
-        state: restarted
-        enabled: yes
