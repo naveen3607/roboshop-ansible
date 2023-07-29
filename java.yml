@@ -7,7 +7,7 @@
   ansible.builtin.import_tasks:
     file: app-preq.yml
 
-- name: Download NodeJS Dependencies
+- name: Download Java Dependencies
   ansible.builtin.shell: mvn clean package ; mv target/{{component}}-1.0.jar {{component}}.jar
   args:
     chdir: /app
