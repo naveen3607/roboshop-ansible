@@ -23,7 +23,7 @@
 - name: Schema Setup
   ansible.builtin.import_tasks:
     file: mongo-schema.yml
-    when: schema is defined
+  when: schema is defined
 
 - name: Service Setup
   ansible.builtin.import_tasks:
