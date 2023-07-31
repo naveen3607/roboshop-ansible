@@ -1,4 +1,4 @@
-name: Maven Setup
-ansible.builtin.import_role:
-  name: common
-  tasks_from: java
+- name: Maven Setup
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: java
