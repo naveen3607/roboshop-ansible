@@ -1,4 +1,3 @@
-- name: Copy Logstash Config File
-  ansible.builtin.template:
-    src: logstash.conf
-    dest: /etc/logstash/conf.d/logstash.conf
+- name: Load Logstash
+  ansible.builtin.import_tasks: logstash.yml
+  when: elk_component == "logstash"
