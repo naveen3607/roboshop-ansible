@@ -1,0 +1,4 @@
+- name: Copy Filebeat Repo File
+  ansible.builtin.template:
+    src: elk.repo
+    dest: /etc/yum.repos.d/elk.repo
