@@ -1,2 +1,4 @@
 component: user
 schema: true
+log_type: raw
+log_file: /var/log/nginx/access.log
