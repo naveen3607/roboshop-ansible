@@ -61,6 +61,6 @@
     enabled: yes
 
 - name: Filebeat Setup
-  ansible.builtin.import_roles:
+  ansible.builtin.import_role:
     name: elk
     tasks_from: filebeat
