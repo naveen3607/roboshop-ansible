@@ -146,7 +146,7 @@ setup.kibana:
 # Authentication credentials - either API key or username/password.
 #api_key: "id:api_key"
 #username: "elastic"
-#password: "changeme"
+#password: "5a6mTlyjU-76eChxFHu1"
 
 # ------------------------------ Logstash Output -------------------------------
 output.logstash:
