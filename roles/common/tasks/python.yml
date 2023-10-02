@@ -10,10 +10,10 @@
   ansible.builtin.import_tasks:
     file: app-preq.yml
 
-#- name: Download Python Dependencies
-#  ansible.builtin.shell: pip3.6 install -r requirements.txt
-#  args:
-#    chdir: /app
+- name: Download Python Dependencies
+  ansible.builtin.shell: pip3.6 install -r requirements.txt
+  args:
+    chdir: /app
 
 - name: Service Setup
   ansible.builtin.import_tasks:
